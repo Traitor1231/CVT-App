@@ -1,28 +1,36 @@
+var Name = localStorage.getItem('Name');
 
-   var Name = localStorage.getItem('Name');
-if(Name === null){	
-	localStorage.setItem('Name', 'Виталя Гора');
-   };
-   var email = localStorage.getItem('email');
-if(email === null){	
-	localStorage.setItem('email', 'vitalya@gora.ru');
-   };
-   var phone = localStorage.getItem('phone');
-if(phone === null){	
-	localStorage.setItem('phone', '+7(440) 554-32-12');
-   };
-  
- document.addEventListener("DOMContentLoaded", function() {
-	var ids = ["Name", "phone", "email"];
-	for (var id of ids) {
-		
-	  var input = document.getElementById(id);
-	  input.value = localStorage.getItem(id);
-	  (function(id, input) {
-		input.addEventListener("change", function() {
-		  localStorage.setItem(id, input.value);
+if (Name === null) {
+  localStorage.setItem('Name', 'Виталя Гора');
+}
 
-		});
-	  })(id, input);
-	} 
-  });
+;
+var email = localStorage.getItem('email');
+
+if (email === null) {
+  localStorage.setItem('email', 'vitalya@gora.ru');
+}
+
+;
+var phone = localStorage.getItem('phone');
+
+if (phone === null) {
+  localStorage.setItem('phone', '+7(440) 554-32-12');
+}
+
+;
+document.addEventListener("DOMContentLoaded", function () {
+  var ids = ["Name", "phone", "email"];
+
+  for (var _i = 0, _ids = ids; _i < _ids.length; _i++) {
+    var id = _ids[_i];
+    var input = document.getElementById(id);
+    input.value = localStorage.getItem(id);
+
+    (function (id, input) {
+      input.addEventListener("change", function () {
+        localStorage.setItem(id, input.value);
+      });
+    })(id, input);
+  }
+});
