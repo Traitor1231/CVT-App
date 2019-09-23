@@ -14,42 +14,43 @@
 <div class="container">
 
 	<div id="tabs">
-		<div class="tab whiteborder">Профиль</div>
-		<div class="tab">Друзья пользователя</div>
-    
-		<div class="tabContent">
-				<div class="row">
-						<div class="col-4v2">
+		<header>
+		<nav class="tab whiteborder">Профиль</nav>
+		<nav class="tab">Друзья пользователя</nav>
+    	</header>
+		<main class="tabContent">
+				<article class="row">
+						<section class="col-4v2">
 								<img class="img-cat" src="img/UserPic.png">
-						</div>
+						</section>
 					
 						<div class="col">
-								<div class="name">
+								<section class="name">
 <input onmouseout="this.blur();" class="input-name" id="Name" >
-							</div>
-						  <div class="row">
+							</section>
+						  <section class="row">
 								<div class="col-6">
 									<div class="city"> г. Нижние Шахты</div>
 								</div>
-							</div>
-						  <div class="row">
+							</section>
+						  <section class="row">
 								<div class="col-6">
 								 <div class="info">Семейное положение</div>
 								</div>
 								<div class="col">
 								 <div class="change-info">холост</div> 
 								</div>
-							  </div>
+							  </section>
 							  
-							  <div class="row">
+							  <section class="row">
 									<div class="col-6">
 											<div class="info">Телефон</div>
 									</div>
 									<div class="col">
 										<input onmouseout="this.blur();" class="input-info-phone" id="phone" >
 									</div>
-								  </div>
-								  <div class="row">
+								  </section>
+								  <section class="row">
 										<div class="col-6">
 												<div class="info"> E-mail</div>
 										</div>
@@ -58,29 +59,29 @@
 										<input onmouseout="this.blur();" class="input-info-email"  id="email" >
 											
 										</div>
-									  </div>
+									  </section>
 									 
 						</div>
-						</div>
+					</article>
 			<div>
-					<div class="row">
+					<article class="row">
 							<div class="col-4v3">
 									<p href="#" class="add-friend">Добавить в друзья</p>
 								  </div>
 <div class="col">
 	<div class="int"> Интересы </div>
 		<div class="row justify-content-start">
-            <div id="Input_val" class="col-auto">
+            <section id="Input_val" class="col-auto">
                 <div id="standart-int"> 
                 </div>
-            </div>    
+            </section>    
                         <div class="add-int">          
                             <div class="intrest-placeholder">
                                 <input  name="int-name" id="save_int" type="text" class="form-control" placeholder="Название интереса"  >
 			                </div>
                                    <div class="add-button">
                                         <button  id="add_button" name='reg' type="submit" class="btn btn-outline-secondary"  >
-						                <span class="int-button">Добавить интерес</span>
+						                <p class="int-button">Добавить интерес</p>
 						                </button>
 										<script>
 										</script>
@@ -89,10 +90,10 @@
                </div>
 							</div>								 
 							</div>
-						</div>
+						</article>
 					</div>
 	
-				</div>
+				</main>
 
 		<div class="tabContent">
 			
@@ -104,11 +105,11 @@
 								<img class="FriendPic" src="img/1.png">
 						</div>
 						<div class="col-4">
-								<span class="underline">Лев Бронштейн</span>
+								<p class="underline">Лев Бронштейн</p>
 						  <div class="row-2">
 								<div class="col-8">
-									<span class="friend-city">г. Ханты-Мансийск</span>
-									<div class="status"><span class="friend-status"> Online</span></div>
+									<p class="friend-city">г. Ханты-Мансийск</p>
+									<div class="status"><p class="friend-status"> Online</p></div>
 								</div>
 							</div>	
 					  </div>
@@ -117,10 +118,10 @@
 							<img class="FriendPic" src="img/2.png">
 					</div>
 					<div class="col-4">
-							<span class="underline">Находка Капитал </span>
+							<p class="underline">Находка Капитал </p>
 					  <div class="row-2">
 							<div class="col-8">
-								<span class="friend-city">г. Усть-Бельск</span>
+								<p class="friend-city">г. Усть-Бельск</p>
 							</div>
 						</div>
 				  </div>
@@ -131,10 +132,10 @@
 								<img class="FriendPic" src="img/3.png">
 						</div>
 						<div class="col-4">
-								<span class="underline">Яндекс Петренко </span>
+								<p class="underline">Яндекс Петренко </p>
 						  <div class="row-2">
 								<div class="col-8">
-									<span class="friend-city">г. Петренко</span>
+									<p class="friend-city">г. Петренко</p>
 								</div>
 							</div>	
 					  </div>
@@ -142,11 +143,11 @@
 							<img class="FriendPic"src="img/4.png">
 					</div>
 					<div class="col-4">
-							<span class="underline">Успех Возможностей</span>
+							<p class="underline">Успех Возможностей</p>
 					  <div class="row-2">
 							<div class="col-8">
-								<span class="friend-city">г. Радонеж</span>
-								<div class="status"><span class="friend-status"> Online</span></div>
+								<p class="friend-city">г. Радонеж</p>
+								<div class="status"><p class="friend-status"> Online</p></div>
 							</div>
 						</div>
 				  </div>
@@ -158,11 +159,11 @@
 								<img class="FriendPic"src="img/5.png">
 						</div>
 						<div class="col-4">
-								<span class="underline">Инна Нашлась </span>
+								<p class="underline">Инна Нашлась </p>
 						  <div class="row-2">
 								<div class="col-8">
-									<span class="friend-city">г. Омск</span>
-									<div class="status"><span class="friend-status"> Online</span></div>
+									<p class="friend-city">г. Омск</p>
+									<div class="status"><p class="friend-status"> Online</p></div>
 								</div>
 							</div>	
 					  </div>
@@ -170,11 +171,11 @@
 							<img class="FriendPic"src="img/6.png">
 					</div>
 					<div class="col-4">
-							<span class="underline">Алла Подольская </span>
+							<p class="underline">Алла Подольская </p>
 					  <div class="row-2">
 							<div class="col-8">
-								<span class="friend-city">г. Петропавловск-Камчатский</span>
-								<div class="status-6"><span class="friend-status"> Online</span></div>
+								<p class="friend-city">г. Петропавловск-Камчатский</p>
+								<div class="status-6"><p class="friend-status"> Online</p></div>
 							</div>
 						</div>
 				  </div>	
@@ -185,11 +186,11 @@
 								<img class="FriendPic"src="img/1.png">
 						</div>
 						<div class="col-4">
-								<span class="underline">Лев Бронштейн</span>
+								<p class="underline">Лев Бронштейн</p>
 						  <div class="row-2">
 								<div class="col-8">
-									<span class="friend-city">г. Ханты-Мансийск</span>
-									<div class="status"><span class="friend-status"> Online</span></div>
+									<p class="friend-city">г. Ханты-Мансийск</p>
+									<div class="status"><p class="friend-status"> Online</p></div>
 								</div>
 							</div>	
 					  </div>
@@ -197,10 +198,10 @@
 							<img class="FriendPic"src="img/2.png">
 					</div>
 					<div class="col-4">
-							<span class="underline">Находка Капитал </span>
+							<p class="underline">Находка Капитал </p>
 					  <div class="row-2">
 							<div class="col-8">
-								<span class="friend-city">г. Усть-Бельск</span>
+								<p class="friend-city">г. Усть-Бельск</p>
 							</div>
 						</div>
 				  </div>
@@ -211,10 +212,10 @@
 								<img class="FriendPic"src="img/3.png">
 						</div>
 						<div class="col-4">
-								<span class="underline">Яндекс Петренко </span>
+								<p class="underline">Яндекс Петренко </p>
 						  <div class="row-2">
 								<div class="col-8">
-									<span class="friend-city">г. Петренко</span>
+									<p class="friend-city">г. Петренко</p>
 								</div>
 							</div>	
 					  </div>
@@ -222,11 +223,11 @@
 							<img class="FriendPic"src="img/4.png">
 					</div>
 					<div class="col-4">
-							<span class="underline">Успех Возможностей</span>
+							<p class="underline">Успех Возможностей</p>
 					  <div class="row-2">
 							<div class="col-8">
-								<span class="friend-city">г. Радонеж</span>
-								<div class="status"><span class="friend-status"> Online</span></div>
+								<p class="friend-city">г. Радонеж</p>
+								<div class="status"><p class="friend-status"> Online</p></div>
 							</div>
 						</div>
 				  </div>
@@ -238,11 +239,11 @@
 								<img class="FriendPic"src="img/5.png">
 						</div>
 						<div class="col-4">
-								<span class="underline">Инна Нашлась </span>
+								<p class="underline">Инна Нашлась </p>
 						  <div class="row-2">
 								<div class="col-8">
-									<span class="friend-city">г. Омск</span>
-									<div class="status"><span class="friend-status"> Online</span></div>
+									<p class="friend-city">г. Омск</p>
+									<div class="status"><p class="friend-status"> Online</p></div>
 								</div>
 							</div>	
 					  </div>
@@ -250,11 +251,11 @@
 							<img class="FriendPic"src="img/6.png">
 					</div>
 					<div class="col-4">
-							<span class="underline">Алла Подольская </span>
+							<p class="underline">Алла Подольская </p>
 					  <div class="row-2">
 							<div class="col-8">
-								<span class="friend-city">г. Петропавловск-Камчатский</span>
-								<div class="status-6"><span class="friend-status"> Online</span></div>
+								<p class="friend-city">г. Петропавловск-Камчатский</p>
+								<div class="status-6"><p class="friend-status"> Online</p></div>
 							</div>
 						</div>
 					</div>		
@@ -265,11 +266,11 @@
 								<img class="FriendPic"src="img/1.png">
 						</div>
 						<div class="col-4">
-								<span class="underline">Лев Бронштейн</span>
+								<p class="underline">Лев Бронштейн</p>
 						  <div class="row-2">
 								<div class="col-8">
-									<span class="friend-city">г. Ханты-Мансийск</span>
-									<div class="status"><span class="friend-status"> Online</span></div>
+									<p class="friend-city">г. Ханты-Мансийск</p>
+									<div class="status"><p class="friend-status"> Online</p></div>
 								</div>
 							</div>	
 					  </div>
@@ -277,10 +278,10 @@
 							<img class="FriendPic"src="img/2.png">
 					</div>
 					<div class="col-4">
-							<span class="underline">Находка Капитал </span>
+							<p class="underline">Находка Капитал </p>
 					  <div class="row-2">
 							<div class="col-8">
-								<span class="friend-city">г. Усть-Бельск</span>
+								<p class="friend-city">г. Усть-Бельск</p>
 							</div>
 						</div>
 				  </div>
@@ -291,10 +292,10 @@
 								<img class="FriendPic"src="img/3.png">
 						</div>
 						<div class="col-4">
-								<span class="underline">Яндекс Петренко </span>
+								<p class="underline">Яндекс Петренко </p>
 						  <div class="row-2">
 								<div class="col-8">
-									<span class="friend-city">г. Петренко</span>
+									<p class="friend-city">г. Петренко</p>
 								</div>
 							</div>	
 					  </div>
@@ -302,11 +303,11 @@
 							<img class="FriendPic"src="img/4.png">
 					</div>
 					<div class="col-4">
-							<span class="underline">Успех Возможностей</span>
+							<p class="underline">Успех Возможностей</p>
 					  <div class="row-2">
 							<div class="col-8">
-								<span class="friend-city">г. Радонеж</span>
-								<div class="status"><span class="friend-status"> Online</span></div>
+								<p class="friend-city">г. Радонеж</p>
+								<div class="status"><p class="friend-status"> Online</p></div>
 							</div>
 						</div>
 				  </div>
@@ -318,11 +319,11 @@
 								<img class="FriendPic"src="img/5.png">
 						</div>
 						<div class="col-4">
-								<span class="underline">Инна Нашлась </span>
+								<p class="underline">Инна Нашлась </p>
 						  <div class="row-2">
 								<div class="col-8">
-									<span class="friend-city">г. Омск</span>
-									<div class="status"><span class="friend-status"> Online</span></div>
+									<p class="friend-city">г. Омск</p>
+									<div class="status"><p class="friend-status"> Online</p></div>
 								</div>
 							</div>	
 					  </div>
@@ -330,11 +331,11 @@
 							<img class="FriendPic"src="img/6.png">
 					</div>
 					<div class="col-4">
-							<span class="underline">Алла Подольская </span>
+							<p class="underline">Алла Подольская </p>
 					  <div class="row-2">
 							<div class="col-8">
-								<span class="friend-city">г. Петропавловск-Камчатский</span>
-								<div class="status-6"><span class="friend-status"> Online</span></div>
+								<p class="friend-city">г. Петропавловск-Камчатский</p>
+								<div class="status-6"><p class="friend-status"> Online</p></div>
 							</div>
 						</div>
 				  </div>	
