@@ -31,7 +31,48 @@ html {
   padding-bottom: 17%;
   margin-bottom: auto;
 }
-
+@media (max-width: 1797px) {
+  .container  {
+padding-top: 16%;
+padding-bottom: 16%;
+  }
+}
+@media (max-width: 1627px) {
+  .container  {
+padding-top: 14%;
+padding-bottom: 14%;
+  }
+}
+@media (max-width: 1327px) {
+  .container  {
+padding-top: 12%;
+padding-bottom: 12%;
+  }
+}
+@media (max-width: 1127px) {
+  .container  {
+padding-top: 10%;
+padding-bottom: 10%;
+  }
+}
+@media (max-width: 987px) {
+  .container  {
+padding-top: 8%;
+padding-bottom: 8%;
+  }
+}
+@media (max-width: 797px) {
+  .container  {
+padding-top: 4%;
+padding-bottom: 4%;
+  }
+}
+@media (max-width: 737px) {
+  .container  {
+padding-top: 0%;
+padding-bottom: 0%;
+  }
+}
 @media (min-width: 200px) {
   .container  {
     max-width: 223px;
@@ -2161,4 +2202,5 @@ html {
   }
 }
 }
+
 /*# sourceMappingURL=bootstrap-grid.css.map */
