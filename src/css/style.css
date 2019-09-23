@@ -161,7 +161,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 .int-button{
 	font-size: 8pt;
@@ -190,10 +190,7 @@ body {
 }
 .intrest-placeholder{
 	-webkit-box-flex: 0;
-    -ms-flex: 0 0 30.333333%;
-    flex: 0 0 30.333333%;
 	position: relative;
-    width: 100%;
     min-height: 1px;
 	padding-left: 15px;
 	margin-top:10px;
