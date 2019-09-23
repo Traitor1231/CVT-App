@@ -15,6 +15,8 @@ const rename = require('gulp-rename');
 
 const htmlmin = require('gulp-htmlmin');
 
+const minify = require('gulp-minify')
+
 const styleFiles = [
    './src/css/bootstrap-grid.css',
    './src/css/jquery.scrollbar.css',
@@ -47,30 +49,22 @@ gulp.task('styles', () => {
       .pipe(gulp.dest('./build/css'))
       .pipe(browserSync.stream());
 });
-
-gulp.task('scripts', () => {
- 
-   
-   return gulp.src(scriptFiles)
-      
-      .pipe(concat('main.js'))
-      
-      .pipe(gulp.dest('./build/js'))
+gulp.task('scripts', function() {
+   return gulp.src(scriptFiles)  
+     .pipe(minify())
+     .pipe(concat('main.js'))
+     .pipe(rename({
+      suffix: '.min'
+   }))   
+     .pipe(gulp.dest('./build/js'))
       .pipe(browserSync.stream());
-      
-});
+ });
 gulp.task('font', function () {
  return gulp.src('./src/css/font/**/*')
     .pipe(gulp.dest('build/css/font'));
 });
 gulp.task('del', () => {
    return del(['build/*'])
-});
-
- gulp.task('js-compress', function () {
-   return gulp.src(scriptFiles)
-       .pipe(concat('main.js'))
-       .pipe(gulp.dest('build/js'));
 });
 gulp.task('img-compress', ()=> {
    return gulp.src('./src/img/**')
@@ -104,4 +98,3 @@ gulp.task('watch', () => {
 
 
 gulp.task('default', gulp.series('del', gulp.parallel('styles', 'js-compress', 'img-compress','font','html'), 'watch'));
-
