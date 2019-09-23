@@ -13,6 +13,7 @@ const imagemin = require('gulp-imagemin');
 
 const rename = require('gulp-rename');
 
+const htmlmin = require('gulp-htmlmin');
 
 const styleFiles = [
    './src/css/bootstrap-grid.css',
@@ -36,17 +37,13 @@ const scriptFiles = [
 gulp.task('styles', () => {
 
    return gulp.src(styleFiles)
- 
       .pipe(concat('style.css'))
-  
       .pipe(cleanCSS({
          level: 2
-      }))
-    
+      }))   
       .pipe(rename({
          suffix: '.min'
-      }))
-      
+      }))      
       .pipe(gulp.dest('./build/css'))
       .pipe(browserSync.stream());
 });
@@ -82,12 +79,12 @@ gulp.task('img-compress', ()=> {
    }))
    .pipe(gulp.dest('./build/img/'))
 });
-gulp.task('html:build', function () {
-   return gulp.src('./src/template/*') 
-      
-       .pipe(gulp.dest('./build')) 
-});
 
+gulp.task('html', () => {
+   return gulp.src('./src/template/*')
+     .pipe(htmlmin({ collapseWhitespace: true }))
+     .pipe(gulp.dest('./build'));
+ });
 gulp.task('watch', () => {
    browserSync.init({
       server: {
@@ -106,4 +103,5 @@ gulp.task('watch', () => {
 });
 
 
-gulp.task('default', gulp.series('del', gulp.parallel('styles', 'js-compress', 'img-compress','font','html:build'), 'watch'));
+gulp.task('default', gulp.series('del', gulp.parallel('styles', 'js-compress', 'img-compress','font','html'), 'watch'));
+
