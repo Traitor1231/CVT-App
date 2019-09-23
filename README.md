@@ -9,8 +9,8 @@ Responsinator:https://www.responsinator.com/?url=https%3A%2F%2Fcvt-for-all.herok
 ## Local installation
 
 ```
-$ git clone https://github.com/Traitor1231/CVT
-$ cd CVT
+$ git clone https://github.com/Traitor1231/CVT-gulp
+$ cd CVT-gulp
 $ npm install
 ```
 
