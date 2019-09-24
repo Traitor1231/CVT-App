@@ -15,7 +15,7 @@ const rename = require('gulp-rename');
 
 const htmlmin = require('gulp-htmlmin');
 
-const minify = require('gulp-minify')
+const uglify = require('gulp-uglify');
 
 const styleFiles = [
    './src/css/bootstrap-grid.css',
@@ -39,31 +39,24 @@ const scriptFiles = [
 gulp.task('styles-compress', () => {
 
    return gulp.src(styleFiles)
- 
       .pipe(concat('style.css'))
-  
       .pipe(cleanCSS({
          level: 2
-      }))
-    
+      }))   
       .pipe(rename({
          suffix: '.min'
-      }))
-      
+      }))   
       .pipe(gulp.dest('./build/css'))
       .pipe(browserSync.stream());
 });
-
- gulp.task('js-compress', function() {
+ gulp.task('js-compress', function () {
    return gulp.src(scriptFiles)  
      .pipe(concat('main.js'))
-     .pipe(minify({
-      ext:{
-         src:'.min.js',
-         min:'.js'
-     }}))
+     .pipe(rename({
+      suffix: '.min'
+   }))
+     .pipe(uglify())
      .pipe(gulp.dest('./build/js'))
-     .pipe(browserSync.stream());
  });
 gulp.task('font', function () {
  return gulp.src('./src/css/font/**/*')
