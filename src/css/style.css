@@ -32,8 +32,7 @@
 #tabs .tabContent{	
 	position: relative;
 	box-shadow:0px 5px 3px 0px rgba(0,0,0,0.31);
-	max-width: 487px;
-	min-width: 205px;
+    min-width: 487px;
 	min-height: 278px;
 	padding: 15px 12px 15px 15px;
 	border-radius: 0px 5px 5px 5px;
@@ -274,7 +273,7 @@ input.input-info-email::placeholder{
 
 }
 
-@media(min-width: 576px){
+@media(min-width: 575.5px){
 	.input-info-phone {
 		width: 150px;
 	}
@@ -295,7 +294,7 @@ input.input-info-email::placeholder{
 .underline {
 	border-bottom: 1px solid currentColor;
 	color:#1574af;
-  font-size:8.9pt;
+	font-size: 9.0pt;
   font-weight:bold;
   }
  
@@ -322,18 +321,18 @@ color:#2f8a26;
 .status-6{
 	margin-top:8px;
 }
-@media(max-width: 576px){
+@media(max-width: 575.5px){
 	.status {
 		margin-top: 0px;
-	}
-	.col-4{
-		line-height: 0.95;
 	}
 	.status-6{
 		margin-top:0px;
 	}
     .int{
 		margin-top:0px;
+	}
+	#tabs .tabContent {
+		min-width: 355px;
 	}
 	
   }
@@ -360,14 +359,19 @@ color:#2f8a26;
 		margin-top:10px;
 	}
 	.int {
-		margin-top:-2px;
+		margin-top:5px;
 	}
 	#tabs .tabContent{	
-		min-height:448px;
+		min-height:548px;
+		min-width: 205px;
 	}
 	#tabs .tabContent-friends {
-	    min-height: 418px;
+	    min-height: 518px;
 	}
+	.row-2-friendlist {
+		margin-bottom: 0.9px;
+	}
+
 	
   }
  
