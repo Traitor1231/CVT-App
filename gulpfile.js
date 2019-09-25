@@ -58,10 +58,6 @@ gulp.task('styles-compress', () => {
      .pipe(uglify())
      .pipe(gulp.dest('./build/js'))
  });
-gulp.task('font', function () {
- return gulp.src('./src/css/font/**/*')
-    .pipe(gulp.dest('build/css/font'));
-});
 gulp.task('del', () => {
    return del(['build/*'])
 });
@@ -96,4 +92,4 @@ gulp.task('watch', () => {
 });
 
 
-gulp.task('default', gulp.series('del', gulp.parallel('styles-compress', 'js-compress', 'img-compress','font','html-compress'), 'watch'));
+gulp.task('default', gulp.series('del', gulp.parallel('styles-compress', 'js-compress', 'img-compress','html-compress'), 'watch'));
