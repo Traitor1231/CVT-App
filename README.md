@@ -4,7 +4,7 @@
 
 
 Heroku:https://and-cvt-for-all.herokuapp.com  
-Responsinator:https://www.responsinator.com/?url=https%3A%2F%2Fand-cvt-for-all.herokuapp.com
+Responsinator:http://www.responsinator.com/?url=and-cvt-for-all.herokuapp.com%2F
 
 ## Local installation
 
