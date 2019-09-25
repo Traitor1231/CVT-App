@@ -1,7 +1,4 @@
-@font-face {
-    font-family: Arial; 
-    src: url(font/arial.ttf);
-   }
+
 #tabs .tab{
 	
 	display: inline-block;
@@ -76,7 +73,7 @@ body {
     box-shadow:         0px 1px 0px 0px rgba(50, 50, 50, 0.38);
 	min-width: 133px;
 	margin-top:2px;
-    padding: 9px 16px 9px 13px;
+    padding: 9px 10px 9px 10px;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -176,7 +173,7 @@ body {
 	border-radius: 2px;
 	padding: 1px;
 	cursor: pointer;
-	padding: 4.5px 6px 4.5px 6px;
+	padding: 4.5px 1.5px 4.5px 1.5px;
 	border: 0px solid #ced4da;
 	color: #ffffff;
     border-radius: 2px;
@@ -294,7 +291,7 @@ input.input-info-email::placeholder{
 .underline {
 	border-bottom: 1px solid currentColor;
 	color:#1574af;
-	font-size: 9.0pt;
+	font-size: 8.2pt;
   font-weight:bold;
   }
  
