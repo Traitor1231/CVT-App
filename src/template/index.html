@@ -13,17 +13,18 @@
 <div class="container">
 
 	<div id="tabs">
-		<header>
+		<header class="navigation">
 		<nav class="tab whiteborder">Профиль</nav>
 		<nav class="tab">Друзья пользователя</nav>
     	</header>
 		<main class="tabContent">
 				<article class="row">
 						<section class="col-4v2">
-								<img class="img-cat" src="img/UserPic.png">
+								<div class="img-cat" style="background:url(img/UserPic.png); ">
+								</div>
 						</section>
 					
-						<div class="col">
+						<div class="col-description">
 								<section class="name">
 <input onmouseout="this.blur();" class="input-name" id="Name" >
 							</section>
@@ -43,7 +44,7 @@
 							  
 							  <section class="row">
 									<div class="col-6">
-											<div class="info">Телефон</div>
+											<div class="info-phone">Телефон</div>
 									</div>
 									<div class="col">
 										<input onmouseout="this.blur();" class="input-info-phone" id="phone" >
@@ -51,7 +52,7 @@
 								  </section>
 								  <section class="row">
 										<div class="col-6">
-												<div class="info"> E-mail</div>
+												<div class="info-email"> E-mail</div>
 										</div>
 										<div class="col">
     
@@ -67,7 +68,7 @@
 							<div class="col-4v3">
 									<span href="#" class="add-friend">Добавить в друзья</span>
 								  </div>
-<div class="col">
+<div class="col-description">
 	<div class="int"> Интересы </div>
 		<div class="row justify-content-start">
             <section id="Input_val" class="col-auto">
@@ -98,7 +99,7 @@
 			
 				<article class="tabContent-friends">
 				<div class="wrapper scrollbar-dynamic">
-				<div class="row-2-friendlist">
+				<div class="row-2-friendlist-first-place">
 			        
 						<section class="col-2">
 								<img class="FriendPic" src="img/1.png">
@@ -173,7 +174,7 @@
 							<span class="underline">Алла Подольская </span>
 					  <div class="row-2">
 							<div class="col-8">
-								<span class="friend-city">г. Петропавловск-Камчатский</span>
+								<span class="friend-city-6">г. Петропавловск-Камчатский</span>
 								<div class="status-6"><span class="friend-status"> Online</span></div>
 							</div>
 						</div>
@@ -253,7 +254,7 @@
 							<span class="underline">Алла Подольская </span>
 					  <div class="row-2">
 							<div class="col-8">
-								<span class="friend-city">г. Петропавловск-Камчатский</span>
+								<span class="friend-city-6">г. Петропавловск-Камчатский</span>
 								<div class="status-6"><span class="friend-status"> Online</span></div>
 							</div>
 						</div>
@@ -333,15 +334,17 @@
 							<span class="underline">Алла Подольская </span>
 					  <div class="row-2">
 							<div class="col-8">
-								<span class="friend-city">г. Петропавловск-Камчатский</span>
+								<span class="friend-city-6">г. Петропавловск-Камчатский</span>
 								<div class="status-6"><span class="friend-status"> Online</span></div>
 							</div>
 						</div>
 				  </section>	
 				  </div>
-				  </div>		  	  	
+				  </div>		  	
 <script type="text/javascript" src="js/main.min.js"></script>			
 </body>
 </html>
+
+
 
 
