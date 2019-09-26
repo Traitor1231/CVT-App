@@ -9,7 +9,7 @@
 	position: relative;
     width: 100%;
     min-height: 1px;
-	padding-left: 21px;
+    padding-left: 21px;
 }
 #tabs .tab{
 	
@@ -38,8 +38,7 @@
 	font-size: 14px;
 	padding:6px 15px 5px 16px;
 	margin-right: 6px;
-	position: relative;
-	top:1px;
+	
 }
 #tabs .tabContent{	
 	position: relative;
@@ -326,6 +325,7 @@ input.input-info-email::placeholder{
 	font-size:11px;
 	color:#373737;
 	margin-bottom:20px;
+	white-space: nowrap;
 }
 
 .friend-status{
@@ -338,7 +338,13 @@ input.input-info-email::placeholder{
 	font-size:11px;
 	color:#373737;
 	line-height: 1;
+	white-space:nowrap;
 	}
+.friend-city-6-second{
+	font-size:11px;
+	color:#373737;
+	line-height: 1;
+	}	
 .status{
 	margin-top:22px;
 }
@@ -408,6 +414,12 @@ input.input-info-email::placeholder{
 	.friend-city-6{
 		line-height: 0;
 		}
+	.friend-city{
+        white-space: normal;
+		}
+	.friend-city-6{
+		white-space: normal;
+		}	
   }
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 	.col-description{
@@ -424,5 +436,3 @@ input.input-info-email::placeholder{
 	padding:4.5px 8px;
 	}
 }
-
-
