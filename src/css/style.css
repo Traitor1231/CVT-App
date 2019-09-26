@@ -418,6 +418,6 @@ input.input-info-email::placeholder{
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
 	.form-control{
-	padding:4.5px 8px;
+	padding:4px 8px;
 	}
 }
