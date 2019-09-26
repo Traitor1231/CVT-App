@@ -9,7 +9,9 @@
 	position: relative;
     width: 100%;
     min-height: 1px;
-    padding-left: 21px;
+	padding-left: 21px;
+	position: relative;
+	top:1px;
 }
 #tabs .tab{
 	
@@ -381,11 +383,11 @@ input.input-info-email::placeholder{
 		margin-top:5px;
 	}
 	#tabs .tabContent{	
-		min-height:558px;
+		min-height:548px;
 		min-width: 205px;
 	}
 	#tabs .tabContent-friends {
-	    min-height: 526px;
+	    min-height: 518px;
 	}
 	.row-2-friendlist {
 		margin-bottom: 0.9px;
@@ -418,6 +420,8 @@ input.input-info-email::placeholder{
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
 	.form-control{
-	padding:4px 8px;
+	padding:4.5px 8px;
 	}
 }
+
+
