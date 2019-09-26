@@ -381,11 +381,11 @@ input.input-info-email::placeholder{
 		margin-top:5px;
 	}
 	#tabs .tabContent{	
-		min-height:548px;
+		min-height:558px;
 		min-width: 205px;
 	}
 	#tabs .tabContent-friends {
-	    min-height: 518px;
+	    min-height: 526px;
 	}
 	.row-2-friendlist {
 		margin-bottom: 0.9px;
