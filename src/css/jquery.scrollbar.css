@@ -547,21 +547,11 @@
 
 .scrollbar-dynamic > .scroll-element div {
     display: block;
-    height: 96%;
+    height: 100%;
     left: 0;
-    top: 7px;
     width: 100%;
 }
-@media(max-width:576px){
-	.scrollbar-dynamic > .scroll-element div {
-    top: 7px;
-}
-}
-@media (max-width: 399.5px) {
-	.scrollbar-dynamic > .scroll-element div {
-	top: 10px;
-}
-	}
+
 .scrollbar-dynamic > .scroll-element.scroll-double {
     bottom: 2px;
     height: 7px;
@@ -792,6 +782,7 @@
 
 .scrollbar-chrome > .scroll-element.scroll-double.scroll-scrolly_visible .scroll-element_track { left: -19px; }
 .scrollbar-chrome > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track { top: -19px; }
+
 
 
 
