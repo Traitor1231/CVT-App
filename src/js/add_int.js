@@ -1,13 +1,11 @@
-
-var tdList = $('#Input_val div');
+var List = $('#Input_val div');
 var inputInt; 
-var key_id = "INT";
+var key_id = "hobby";
 var Addbutton;
-
 
 document.addEventListener('DOMContentLoaded', function() { 
   inputInt = document.getElementById('save_int');        
-  inputInt.value = localStorage.getItem(key_id);  
+  inputInt.value = sessionStorage.getItem(key_id);  
   Addbutton = document.getElementById('add_button');  
   Addbutton.addEventListener('click', function() {                
   if(inputInt.value === "" || inputInt.value === "    " || inputInt.value === "     " || inputInt.value === "      "|| inputInt.value === "       " || inputInt.value === "        " || inputInt.value === "         " | inputInt.value === "" || inputInt.value === "          " || inputInt.value === "           " || inputInt.value === "           " || inputInt.value === "            " || inputInt.value === "             " || inputInt.value === "              " || inputInt.value === "               ") { 
@@ -18,34 +16,36 @@ document.addEventListener('DOMContentLoaded', function() {
     alert('Минимальное количество символов должно превышать 3 еденицы');
   } else {
     
-localStorage.setItem(key_id, inputInt.value); 
+sessionStorage.setItem(key_id, inputInt.value); 
   document.getElementById('save_int').value = ""; 
-    var lsLen = localStorage.length;
+    var lsLen = sessionStorage.length;
       if(lsLen > 0){ 
         for(var i = 0; i < lsLen; i++){
-          var key = localStorage.key(i);
+          var key = sessionStorage.key(i);
            if(key.indexOf(key_id) == 0){
               $('<div></div>').addClass('intres')
-                .text(localStorage.getItem(key))
-                  .appendTo(tdList);
-                    var listItems = tdList.children('div');
-                      tdList.append(listItems.get().reverse()); 
+                .text(sessionStorage.getItem(key))
+                  .appendTo(List);
+                    var listItems = List.children('div');
+                      List.append(listItems.get().reverse()); 
           }
         }
       }
     }
   })
 })
-
     $(document).on('click','.intres', function(e){
       var jet = $(e.target);
-      localStorage.removeItem(jet.attr('data-itemid'));
+      sessionStorage.removeItem(jet.attr('data-itemid'));
       jet.remove();    
     })
-      localStorage.removeItem('INT'); 
-      var target = document.getElementById('standart-int');
-      target.insertAdjacentHTML('beforeEnd', '<div id="memes"class="intres">компьютеры</div><div class="intres">радио</div><div class="intres">музыка</div>');
-    
+    sessionStorage.removeItem('hobby'); 
+      const reload = localStorage.getItem("reloaded");
+      if (reload === null){
+        var target = document.getElementById('standart-int');
+        target.insertAdjacentHTML('beforeEnd', '<div class="intres">компьютеры</div><div class="intres">радио</div><div class="intres">музыка</div>');
+      }
+      localStorage.setItem("reloaded", true);
     
 
   
