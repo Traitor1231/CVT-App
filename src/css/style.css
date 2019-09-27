@@ -431,6 +431,9 @@ input.input-info-email::placeholder{
 	.friend-city-6{
 	white-space: normal;
 	}
+	.col-4{
+	margin-right:-10px;
+	}
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
 	.form-control{
@@ -439,6 +442,9 @@ input.input-info-email::placeholder{
 	.friend-city-6{
 	line-height: 0;
 	white-space: normal;
+	}
+	.friend-city-6-second{
+	line-height:0.6;
 	}
 }
 
