@@ -366,7 +366,7 @@ input.input-info-email::placeholder{
   }
 #tabs .tabContent-friends{	
 	position: relative;
-	height: 247px;
+	height: 248px;
 	font-family: 'Arial';
 	background: #ffffff;
 	overflow-y: auto ;
@@ -445,4 +445,32 @@ input.input-info-email::placeholder{
 	line-height:0.6;
 	}
 }
-
+@-moz-document  url-prefix()  {
+	
+	.row-2-friendlist{
+		margin-bottom: 14.2px;
+	  }
+	.row-2-friendlist-first-place{
+		margin-bottom: 14.2px;
+	  }
+}
+@-moz-document url-prefix() {
+	@media screen and (max-width: 575.5px) {
+		.row-2-friendlist{
+			margin-bottom: 23.7px;
+		  }
+		  .row-2-friendlist-first-place{
+			margin-bottom: 23.7px;
+		  }
+	}
+}
+@-moz-document url-prefix() {
+	@media screen and (max-width: 399.5px) {
+		.row-2-friendlist{
+			margin-bottom: 0.9px;
+		  }
+		  .row-2-friendlist-first-place{
+			margin-bottom: 0.9px;
+		  }
+	}
+}
