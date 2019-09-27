@@ -313,7 +313,8 @@ input.input-info-email::placeholder{
 	border-bottom: 1px solid currentColor;
 	color:#1574af;
 	font-size: 13px;
-  font-weight:bold;
+    font-weight:bold;
+    white-space: nowrap;
   }
  
   .FriendPic{
@@ -416,7 +417,11 @@ input.input-info-email::placeholder{
 	.friend-city{
         white-space: normal;
 		}	
+	.underline {
+    white-space:normal;
+  }	
   }
+  
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 	.col-description{
 		padding-left:5px;
