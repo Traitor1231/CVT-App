@@ -40,9 +40,5 @@ sessionStorage.setItem(key_id, inputInt.value);
       jet.remove();    
     })
     sessionStorage.removeItem('hobby'); 
-
-    
-
-  
-    
-  
+    var target = document.getElementById('standart-int');
+    target.insertAdjacentHTML('beforeEnd', '<div class="intres">компьютеры</div><div class="intres">радио</div><div class="intres">музыка</div>');
