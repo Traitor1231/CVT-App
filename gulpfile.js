@@ -34,9 +34,6 @@ const scriptFiles = [
    './src/js/localstorage.js',
    './src/js/tabs.js'
 ]
-const standartInt = [
-   './src/js/standart_int.js'
-]
 
 
 gulp.task('styles-compress', () => {
@@ -58,12 +55,6 @@ gulp.task('styles-compress', () => {
      .pipe(rename({
       suffix: '.min'
    }))
-     .pipe(uglify())
-     .pipe(gulp.dest('./build/js'))
- });
-  gulp.task('js-compress-standartInt', function () {
-   return gulp.src(standartInt)  
-     .pipe(concat('standart_int.js'))
      .pipe(uglify())
      .pipe(gulp.dest('./build/js'))
  });
@@ -101,4 +92,4 @@ gulp.task('watch', () => {
 });
 
 
-gulp.task('default', gulp.series('del', gulp.parallel('styles-compress', 'js-compress','js-compress-standartInt', 'img-compress','html-compress'), 'watch'));
+gulp.task('default', gulp.series('del', gulp.parallel('styles-compress', 'js-compress', 'img-compress','html-compress'), 'watch'));
