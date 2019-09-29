@@ -282,7 +282,6 @@ padding-bottom: 0%;
 @media (max-width: 575.5px) {
   .col-4v3{
     flex: 0 0 37.5%;
-    margin-top: 4px;
   }
   
   
