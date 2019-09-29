@@ -22,7 +22,7 @@
 	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.38);
 	font-size: 14px;
 	padding:6px 16px 6px 15px;
-	margin-right: 6px;
+	margin-right: 10px;
 	position: relative;
 	top:1px;
 }
@@ -35,7 +35,7 @@
 	color:#000000;
 	font-size: 14px;
 	padding:6px 15px 6px 16px;
-	margin-right: 6px;
+	margin-right: 10px;
 	
 }
 #tabs .tabContent{	
@@ -391,6 +391,7 @@ input.input-info-email::placeholder{
 	}
 	.add-friend {
 		margin-top:10px;
+		margin-left: 21px;
 	}
 	.int {
 		margin-top:5px;
@@ -437,6 +438,7 @@ input.input-info-email::placeholder{
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width : 575.5px){
 	.col-description{
 	padding-left:21px;
+	-ms-flex-preferred-size:40px;
 	}
 	.friend-city-6{
 	white-space: normal;
@@ -445,6 +447,7 @@ input.input-info-email::placeholder{
 	margin-right:-10px;
 	}
 }
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
 	.form-control{
 	padding:4.5px 8px;
@@ -456,7 +459,16 @@ input.input-info-email::placeholder{
 	.friend-city-6-second{
 	line-height:0.6;
 	}
+	.add-friend{
+	margin-right:15px;
+	}
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width : 575.5px){
+    .add-friend{
+	margin-right:2px;
+	}
+}
+
 @-moz-document  url-prefix()  {
 	
 	.row-2-friendlist{
