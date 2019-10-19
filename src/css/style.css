@@ -1,9 +1,21 @@
 
+ul{
+	margin-top:0px;
+	margin-left:-25px;
+	display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 00px;
+}
+
+
 .col-description{
-	-ms-flex-preferred-size: 0;
+
     flex-basis: 0;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
+
     flex-grow: 1;
 	max-width: 100%;
 	position: relative;
@@ -11,22 +23,22 @@
     min-height: 1px;
     padding-left: 21px;
 }
-#tabs .tab{
+.tabs .tab{
 	
 	display: inline-block;
 	cursor: pointer;	
 	font-family: 'Arial';
 	border-radius: 4px 4px 0px 0px;
-	background: linear-gradient(0deg, rgba(31,104,172,1) 0%, rgba(6,133,180,1) 100%);
+	background: linear-gradient(0deg, rgba(35,104,172,1) 0%, rgba(6,133,180,1) 100%);
 	color:#ffffff;
 	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.38);
 	font-size: 14px;
 	padding:6px 16px 6px 15px;
-	margin-right: 10px;
+	margin-right: 6px;
 	position: relative;
 	top:1px;
 }
-#tabs .whiteborder{
+.tabs .whiteborder{
 	text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.38);
 	box-shadow:0px 1px 3px 0px rgba(0,0,0,0.31);
 	font-family: 'Arial';
@@ -35,10 +47,10 @@
 	color:#000000;
 	font-size: 14px;
 	padding:6px 15px 6px 16px;
-	margin-right: 10px;
+	margin-right: 6px;
 	
 }
-#tabs .tabContent{	
+.tabs .tabContent{	
 	position: relative;
 	box-shadow:0px 2px 3px 0px rgba(0,0,0,0.31);
     min-width: 487px;
@@ -50,10 +62,10 @@
 
 }
 
-#tabs .hide{
+.tabs .hide{
 	display: none;
 }
-#tabs .show{
+.tabs .show{
 	display: block;
 }
 .tab-text{
@@ -73,8 +85,7 @@ body {
 
 .img-cat{
 	box-shadow:0px 0px 6px 1px rgba(0,0,0,0.32)inset;
-	-webkit-box-shadow:0px 0px 6px 1px rgba(0,0,0,0.32)inset;
-	-moz-box-shadow:0px 0px 6px 1px rgba(0,0,0,0.32)inset;
+
 	border-radius: 3px;
     width:132px;
     height:169px; 
@@ -82,8 +93,7 @@ body {
 	background:url(../img/UserPic.png);
 	}
 .add-friend {
-	-webkit-box-shadow: 0px 1px 0px 0px rgba(50, 50, 50, 0.38);
-    -moz-box-shadow:    0px 1px 0px 0px rgba(50, 50, 50, 0.38);
+
     box-shadow:         0px 1px 0px 0px rgba(50, 50, 50, 0.38);
 	min-width: 132px;
     padding: 9px 9px 9px 9px;
@@ -98,8 +108,7 @@ body {
 	position: relative;
     margin-left:15px;
     line-height: 0.95;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 30%;
+
 	flex: 0 0 30%;
 	min-width: 132px;
     max-width: 132px;
@@ -184,17 +193,15 @@ body {
    
 }
 .add-int{
-	display: -webkit-box;
-    display: -ms-flexbox;
+
     display: flex;
-    -ms-flex-wrap: wrap;
+
 	flex-wrap: wrap;
 }
 
 .btn{
 	width: 105px;
-	-webkit-box-shadow: 0px 1px 0px 0px rgba(50, 50, 50, 0.38);
-    -moz-box-shadow:    0px 1px 0px 0px rgba(50, 50, 50, 0.38);
+
     box-shadow:         0px 1px 0px 0px rgba(50, 50, 50, 0.38);
 	margin-top:10px;
 	border-radius: 2px;
@@ -210,11 +217,9 @@ body {
 	font-size: 10px;
     text-rendering: auto;
 }
-::-moz-placeholder, :-moz-placeholder {
-    opacity: 1;
-}
+
 .intrest-placeholder{
-	-webkit-box-flex: 0;
+
 	position: relative;
     min-height: 1px;
 	padding-left: 15px;
@@ -222,8 +227,7 @@ body {
 }
 .add-button{
 	flex-basis: 100px;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
+
     flex-grow: 1;
 	max-width: 100%;
 	position: relative;
@@ -267,6 +271,7 @@ input:hover{
 	outline-color: #ced4da;
 }
 .input-info-phone{
+
 	width: 100px;
 	border-radius: 2px;
 	font-weight: lighter;
@@ -310,7 +315,31 @@ input.input-info-email::placeholder{
 		width: 280px;
 	}
   }
-
+input[type="tel"]::-webkit-input-placeholder {
+	color: #dad8d8;
+}
+input[type="email"]::-webkit-input-placeholder {
+	color: #dad8d8;
+}
+input[type="text"]::-webkit-input-placeholder {
+	color: #dad8d8;
+}
+input[type="tel"]:-ms-input-placeholder {
+	color: #dad8d8;
+}
+input[type="email"]:-ms-input-placeholder {
+	color: #dad8d8;
+}
+input[type="text"]:-ms-input-placeholder {
+	color: #dad8d8;
+}
+input:invalid {
+    border-color: red;
+}
+input,
+input:valid {
+    border-color: #ccc;
+}
 /*Friend list*/
 
 
@@ -367,12 +396,12 @@ input.input-info-email::placeholder{
     .int{
 		margin-top:-11px;
 	}
-	#tabs .tabContent {
+	.tabs .tabContent {
 		min-width: 355px;
 	}
 	
   }
-#tabs .tabContent-friends{	
+.tabs .tabContent-friends{	
 	position: relative;
 	height: 248px;
 	font-family: 'Arial';
@@ -381,26 +410,26 @@ input.input-info-email::placeholder{
 	overflow-x: hidden;
 }
 @media (max-width: 399.5px) {
-	#tabs .tab{
+	.tabs .tab{
 	  font-size: 10pt;
 	  padding: 7px 0px 5px 0px;
 	}
-	#tabs .whiteborder{
+	.tabs .whiteborder{
 	  font-size: 10pt;
 	  padding: 7px 0 5px;
 	}
 	.add-friend {
 		margin-top:10px;
-		margin-left: 21px;
+		margin-left:20px;
 	}
 	.int {
 		margin-top:5px;
 	}
-	#tabs .tabContent{	
+	.tabs .tabContent{	
 		min-height:562px;
 		min-width: 205px;
 	}
-	#tabs .tabContent-friends {
+	.tabs .tabContent-friends {
 	    min-height: 528px;
 	}
 	.row-2-friendlist {
@@ -436,18 +465,10 @@ input.input-info-email::placeholder{
 	}
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width : 575.5px){
-	.col-description{
-	padding-left:21px;
-	-ms-flex-preferred-size:40px;
-	}
-	.friend-city-6{
-	white-space: normal;
-	}
-	.col-4{
-	margin-right:-10px;
+	ul{
+	margin-left:-38px;
 	}
 }
-
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
 	.form-control{
 	padding:4.5px 8px;
@@ -459,16 +480,45 @@ input.input-info-email::placeholder{
 	.friend-city-6-second{
 	line-height:0.6;
 	}
-	.add-friend{
-	margin-right:15px;
+	.int{
+	margin-left:15px;
+	}
+	.add-button{
+	margin-top:-15px
+	}
+	.intrest-placeholder{
+	margin-top:-5px;
+    padding-left:30px;	
+	}
+	.col-description{
+	flex-basis:40px;
+	}
+	
+    ul{
+	margin-top:0px;
 	}
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width : 575.5px){
-    .add-friend{
-	margin-right:2px;
+	.col-description{
+	padding-left:21px;
+	}
+	.friend-city-6{
+	white-space: normal;
+	}
+	.col-4{
+	margin-right:-10px;
+	}
+	.int{
+	margin-left:2px;
+	}
+	.intrest-placeholder{
+	padding-left:17px;	
+	}
+	.add-button{
+	margin-top:0px;
+    padding-left:17px	
 	}
 }
-
 @-moz-document  url-prefix()  {
 	
 	.row-2-friendlist{
