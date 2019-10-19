@@ -1,4 +1,5 @@
-var List = $('#Input_val div');
+
+var List = $('#Input_val ul');
 var inputInt; 
 var key_id = "hobby";
 var Addbutton;
@@ -8,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
   inputInt.value = sessionStorage.getItem(key_id);  
   Addbutton = document.getElementById('add_button');  
   Addbutton.addEventListener('click', function() {                
-  if(inputInt.value === "" || inputInt.value === "    " || inputInt.value === "     " || inputInt.value === "      "|| inputInt.value === "       " || inputInt.value === "        " || inputInt.value === "         " | inputInt.value === "" || inputInt.value === "          " || inputInt.value === "           " || inputInt.value === "           " || inputInt.value === "            " || inputInt.value === "             " || inputInt.value === "              " || inputInt.value === "               ") { 
-    alert('Поле не должно быть пустым');
+  if(inputInt.value.indexOf(' ') > -1) { 
+    alert('Поле не должно содержать пробелы');
   } else if(inputInt.value.length > 15 ){
     alert('Количество символов не должно превышать 15 едениц');
   } else if(inputInt.value.length < 4 ){
@@ -23,10 +24,10 @@ sessionStorage.setItem(key_id, inputInt.value);
         for(var i = 0; i < lsLen; i++){
           var key = sessionStorage.key(i);
            if(key.indexOf(key_id) == 0){
-              $('<div></div>').addClass('intres')
+              $('<li></li>').addClass('intres')
                 .text(sessionStorage.getItem(key))
                   .appendTo(List);
-                    var listItems = List.children('div');
+                    var listItems = List.children('li');
                       List.append(listItems.get().reverse()); 
           }
         }
@@ -41,4 +42,7 @@ sessionStorage.setItem(key_id, inputInt.value);
     })
     sessionStorage.removeItem('hobby'); 
     var target = document.getElementById('standart-int');
-    target.insertAdjacentHTML('beforeEnd', '<div class="intres">компьютеры</div><div class="intres">радио</div><div class="intres">музыка</div>');
+    target.insertAdjacentHTML('beforeEnd', '<li class="intres">компьютеры</li><li class="intres">радио</li><li class="intres">музыка</li>');
+
+
+  

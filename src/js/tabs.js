@@ -22,7 +22,7 @@ function hideTabsContent(a){
 	}	
 }
 
-document.getElementById('tabs').onclick = function(event){
+document.getElementById('tabs_switch').onclick = function(event){
 	var target = event.target;
 	if(target.className == 'tab'){
 		for(var i = 0; i < tab.length; i++){

@@ -1,24 +1,15 @@
 var Name = localStorage.getItem('Name');
-
 if (Name === null) {
   localStorage.setItem('Name', 'Виталя Гора');
-}
-
-;
+};
 var email = localStorage.getItem('email');
-
 if (email === null) {
   localStorage.setItem('email', 'vitalya@gora.ru');
-}
-
-;
+};
 var phone = localStorage.getItem('phone');
-
 if (phone === null) {
-  localStorage.setItem('phone', '+7(440) 554-32-12');
-}
-
-;
+  localStorage.setItem('phone', '+7 (440) 554-32-12');
+};
 document.addEventListener("DOMContentLoaded", function () {
   var ids = ["Name", "phone", "email"];
 
