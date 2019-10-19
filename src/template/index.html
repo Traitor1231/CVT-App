@@ -2,19 +2,18 @@
 <html lang="en">
 
 <head>
-  <title>CVT</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="initial-scale=1.0, width=device-width">
-  <link rel="stylesheet" href="css/style.min.css">
+<title>Тестовое задание ЦВТ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/style.min.css">
 </head>
-
-<body>
-  <div class="container">
-		  <div id="tabs">
-			<header class="navigation">
-			  <nav class="tab whiteborder">Профиль</nav>
-			  <nav class="tab">Друзья пользователя</nav>
-			</header>
+	<body>
+		<div class="container">
+		  <div class="tabs" id="tabs_switch">
+			<nav class="navigation">
+			  <a class="tab whiteborder">Профиль</a>
+			  <a class="tab">Друзья пользователя</a>
+			</nav>
 			<main class="tabContent">
 			  <article class="row">
 				<section class="col-4v2">
@@ -24,7 +23,7 @@
 	  
 				<div class="col-description">
 				  <section class="name">
-					<input onmouseout="this.blur();" class="input-name" id="Name">
+					<input required class="input-name" id="Name" type="text" placeholder="Имя">
 				  </section>
 				  <section class="row">
 					<div class="col-6">
@@ -45,18 +44,17 @@
 					  <div class="info-phone">Телефон</div>
 					</div>
 					<div class="col">
-					  <input onmouseout="this.blur();" class="input-info-phone" id="phone">
+					  <input required type="tel" class="input-info-phone" id="phone" placeholder="+7 (000) 000-00-00">
 					</div>
 				  </section>
 				  <section class="row">
 					<div class="col-6">
 					  <div class="info-email"> E-mail</div>
 					</div>
-					<div class="col">  
-					  <input onmouseout="this.blur();" class="input-info-email" id="email">
+					<div class="col">  						
+						<a><input required class="input-info-email" id="email" type="email" placeholder="something-512@mail.ru" ></a>
 					</div>
 				  </section>
-	  
 				</div>
 			  </article>
 			  <div>
@@ -66,8 +64,8 @@
 					<div class="int"> Интересы </div>
 					<div class="row justify-content-start">
 					  <section id="Input_val" class="col-auto">
-						<div id="standart-int">
-						</div>
+						<ul id="standart-int">
+						</ul>
 					  </section>
 					  <div class="add-int">
 						<div class="intrest-placeholder">
@@ -328,6 +326,8 @@
 					</section>
 				  </div>
 				</div>
-          <script src="js/main.min.js"></script>
+		<script  src="js/main.min.js"></script>		
 </body>
+</html>
+
 
