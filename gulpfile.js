@@ -32,7 +32,8 @@ const scriptFiles = [
    './src/js/scroll.js',
    './src/js/add_int.js',
    './src/js/localstorage.js',
-   './src/js/tabs.js'
+   './src/js/tabs.js',
+   './src/js/name_phone_email.validation.js'
 ]
 
 
