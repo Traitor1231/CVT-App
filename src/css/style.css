@@ -29,7 +29,6 @@ ul{
 
 .friendlist{
 	display: flex;
-	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-bottom: 23.5px;
   }
@@ -388,7 +387,7 @@ input[id="Name"]:-ms-input-placeholder {
 	/*margin-bottom:20px;*/
 	white-space: nowrap;
 	margin-top: 4px;
-	min-width: 90px;
+	min-width: 94px;
 }
 
 .friendlist__text_status_online{
@@ -487,13 +486,14 @@ input[id="Name"]:-ms-input-placeholder {
 	.friendlist__link_friend_name {
 		white-space:nowrap;
 	  }	
-	  .friendlist__text_friend_city {
+	/*  .friendlist__text_friend_city {
 		white-space:nowrap;
-	} 
+	} */
 	.friendlist  {
 		margin-bottom: 0.9px;
 	}
 }
+/*
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 	.description-profile-user-info{
 		padding-left:5px;
@@ -544,12 +544,7 @@ input[id="Name"]:-ms-input-placeholder {
     padding-left:17px	
 	}
 }
-@-moz-document  url-prefix()  {
-	
-	.friendlist {
-		margin-bottom: 14.2px;
-	  }
-}
+
 @-moz-document url-prefix() {
 	@media screen and (max-width: 575.5px) {
 		.friendlist {
@@ -564,3 +559,4 @@ input[id="Name"]:-ms-input-placeholder {
 		  }
 	}
 }
+*/
