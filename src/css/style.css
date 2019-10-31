@@ -31,6 +31,7 @@ ul{
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 23.5px;
+	width: 460px;
   }
 .description-profile-user-info{
     flex-basis: 0;
@@ -94,7 +95,7 @@ ul{
 
 
 .navigation{
-	min-width: 254.5px;
+	/*min-width: 254.5px;*/
 	white-space: nowrap;
 }
 @media (max-width: 413.5px) {
@@ -295,7 +296,7 @@ input:hover{
 }
 .description-profile__input-phone{
 
-	width: 100px;
+	width: 105px;
 	border-radius: 2px;
 	font-weight: lighter;
 	font-size:8pt;
@@ -308,7 +309,7 @@ input.description-profile__input-phone::placeholder{
 	color:#262626;
 }
 .description-profile__input-email{
-	width: 100px;
+	width: 105px;
 	border-radius: 2px;
 	font-weight: lighter;
 	font-size:12px;
@@ -388,6 +389,7 @@ input[id="Name"]:-ms-input-placeholder {
 	white-space: nowrap;
 	margin-top: 4px;
 	min-width: 94px;
+	line-height: 0.65;
 }
 
 .friendlist__text_status_online{
@@ -401,7 +403,7 @@ input[id="Name"]:-ms-input-placeholder {
 	position: absolute;
 }
 
-@media(max-width: 575.5px){
+@media(max-width: 519.5px){
 	/*.friendlist-status {
 		top:25px;
 		position: absolute;
@@ -409,7 +411,9 @@ input[id="Name"]:-ms-input-placeholder {
 /*	.tabs .profile__content{
 		min-width: 355px;
 	}*/
-	
+	.friendlist{
+		width:auto;
+	  }
   }
   
 .tabs .friendlist-tab-content{	
@@ -454,12 +458,12 @@ input[id="Name"]:-ms-input-placeholder {
 		margin-left:20px;
 	}
 	.tabs .profile__content{	
-		min-height:522px;
+		min-height:660px;
 		min-width: 205px;
 		border-radius: 4px 4px 4px 4px
 	}
 	.tabs .friendlist-tab-content {
-	    min-height: 542px;
+	    min-height: 630px;
 	}
 	
 	/*.friendlist  {
@@ -483,10 +487,10 @@ input[id="Name"]:-ms-input-placeholder {
   }	
   }
   @media (max-width: 379.5px){
-	.friendlist__link_friend_name {
+	/*.friendlist__link_friend_name {
 		white-space:nowrap;
 	  }	
-	/*  .friendlist__text_friend_city {
+	  .friendlist__text_friend_city {
 		white-space:nowrap;
 	} */
 	.friendlist  {
@@ -556,6 +560,14 @@ input[id="Name"]:-ms-input-placeholder {
 	@media screen and (max-width: 413.5px) {
 		.friendlist {
 			margin-bottom: 0.9px;
+		  }
+	}
+}
+
+@-moz-document url-prefix() {
+	@media screen and (min-width: 797.5px) {
+		.col-4 {
+			margin-right: 0px;
 		  }
 	}
 }
