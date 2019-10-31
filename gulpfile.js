@@ -15,7 +15,8 @@ const rename = require('gulp-rename');
 
 const htmlmin = require('gulp-htmlmin');
 
-const uglify = require('gulp-uglify');
+
+const uglify = require('gulp-uglify-es').default;
 
 const styleFiles = [
    './src/css/bootstrap-grid.css',
