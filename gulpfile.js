@@ -15,8 +15,9 @@ const rename = require('gulp-rename');
 
 const htmlmin = require('gulp-htmlmin');
 
+const webpack = require('webpack-stream');
 
-const uglify = require('gulp-uglify-es').default;
+const gulpif = require('gulp-if');
 
 const styleFiles = [
    './src/css/bootstrap-grid.css',
@@ -26,43 +27,56 @@ const styleFiles = [
    './src/css/style.css'
 ]
 
-const scriptFiles = [
-   './src/js/jquery.js',
-   './src/js/prettify.js',
-   './src/js/jquery.scrollbar.js',
-   './src/js/scroll.js',
-   './src/js/add_int.js',
-   './src/js/localstorage.js',
-   './src/js/tabs.js',
-   './src/js/name_phone_email.validation.js'
-]
+let isDev = false;
+let isProd = !isDev;
 
+let WebConfig = {
+    output:{
+      filename: 'main.min.js'
+    },
+    
+    module: {
+       
+      rules: [
+        {
+          test: /\.m?js$/,
+          exclude: /(node_modules|bower_components)/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env']
+            }
+          }
+        }
+      ]
+    },
+    mode: isDev ? 'development' : 'production',
+    devtool: isDev ? 'eval-source-map' : 'none'
+};
 
 gulp.task('styles-compress', () => {
 
    return gulp.src(styleFiles)
       .pipe(concat('style.css'))
-      .pipe(cleanCSS({
+      .pipe(gulpif(isProd, cleanCSS({
          level: 2
-      }))   
+      })))   
       .pipe(rename({
          suffix: '.min'
       }))   
       .pipe(gulp.dest('./build/css'))
       .pipe(browserSync.stream());
 });
- gulp.task('js-compress', function () {
-   return gulp.src(scriptFiles)  
-     .pipe(concat('main.js'))
-     .pipe(rename({
-      suffix: '.min'
-   }))
-     .pipe(uglify())
+ gulp.task('js-compress', () => {
+   return gulp.src('./src/js/index.js')  
+     .pipe(webpack(WebConfig))
      .pipe(gulp.dest('./build/js'))
  });
+
 gulp.task('del', () => {
    return del(['build/*'])
 });
+
 gulp.task('img-compress', ()=> {
    return gulp.src('./src/img/**')
    .pipe(imagemin({
@@ -71,9 +85,11 @@ gulp.task('img-compress', ()=> {
    .pipe(gulp.dest('./build/img/'))
 });
 gulp.task('html-compress', () => {
+   
    return gulp.src('./src/template/*')
-     .pipe(htmlmin({ collapseWhitespace: true }))
+     .pipe(gulpif(isProd,htmlmin({ collapseWhitespace: true })))
      .pipe(gulp.dest('./build'));
+     
  });
 
 gulp.task('watch', () => {
@@ -94,4 +110,4 @@ gulp.task('watch', () => {
 });
 
 
-gulp.task('default', gulp.series('del', gulp.parallel('styles-compress', 'js-compress', 'img-compress','html-compress'), 'watch'));
+gulp.task('default', gulp.series('del',gulp.parallel('styles-compress', 'js-compress', 'img-compress','html-compress'),'watch'));
