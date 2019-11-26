@@ -17,18 +17,18 @@ validateEmail = () => {
    if (inputEmail.value.length === 0) {
    } else if (inputEmail.value.startsWith(' ')) {
      alert('Поле не может начинаться с пробела');
-     localStorage.setItem('email', ' '); 
+     localStorage.setItem('email', ''); 
      inputEmail.value=''; 
      document.getElementById('email').style.width = '85px';
    } else if (inputEmail.value.includes(' ')) {
      alert('Поле не может содержать пробелы' );
-     localStorage.setItem('email', ' '); 
+     localStorage.setItem('email', ''); 
      inputEmail.value=''; 
      document.getElementById('email').style.width = '85px';
    } else if (validateSumbolsEmail(email) === false ) {
      alert('Введите валидный адрес почты, в следующем формате: something@mail.ru');
      inputEmail.value=''; 
-     localStorage.setItem('email', ' '); 
+     localStorage.setItem('email', ''); 
      document.getElementById('email').style.width = '85px';
    }   
 }	  
