@@ -18,22 +18,24 @@
 			  </header>
 			  <main class="profile">
 			<section class="profile__content">
-			  <div class="description-profile__wrap row">
-				<div class="description-profile__avatar col-4v2">
-				  <div class="description-profile__avatar_img">
-				  </div>
+			  <div class="description-profile row">
+				<div class="description-profile__avatar col-4v2" >
+					<div class="description-profile__avatar-wrap">
+						<img class="description-profile__avatar_img" src="/img/UserPic.png" alt="UserPic" />
+				    </div>	
 				</div>
-	  
 				<div class="description-profile-user-info">
-				  <div class="description-profile-name">
+				<div class="description-profile-interactive-info__wrap">
+				  <div class="description-profile-name" id="grow-Name">
 					<input  class="description-profile__input-name" id="Name"  placeholder="Имя">
 				  </div>
-				  <div class="description-profile__wrap row">
+				</div>
+				  <div class="description-profile-interactive-info__wrap row">
 					<div class="description-profile-city col-6">
 					  <p class="description-profile__text_city_name"> г. Нижние Шахты</p>
 					</div>
 				  </div>
-				  <div class="description-profile__wrap row">
+				  <div class="description-profile-interactive-info__wrap row">
 					<div class="description-profile-family col-6">
 					  <p class="description-profile__text_family_status">Семейное положение</p>
 					</div>
@@ -41,30 +43,30 @@
 					  <p class="description-profile__text_married_status">холост</p>
 					</div>
 				  </div>
-				  <div class="description-profile__wrap row">
+				  <div class="description-profile-interactive-info__wrap row">
 					<div class="description-profile-phone col-6">
 					  <p class="description-profile__text_phone_number">Телефон</p>
 					</div>
-					<div class="description-profile__phone col" id="grow-phone">
+					<div class="description-profile-phone__wrap-input col" id="grow-phone">
 					  <input  class="description-profile__input-phone" id="phone" placeholder="+7 (000) 000-00-00">
 					</div>
 				  </div>
-				  <div class="description-profile__wrap row">
+				  <div class="description-profile-interactive-info__wrap row">
 					<div class="description-profile-email col-6">
 					  <p class="description-profile__text_email_adress"> E-mail</p>
 					</div>
-					<div class="description-profile-email col" id="grow-email">		
-			          <input  class="description-profile__input-email" id="email" placeholder="something@mail.ru" >
+					<div class="description-profile-email__wrap-input col" id="grow-email">		
+			          <input  class="description-profile__input-email" id="email" placeholder="some1@mail.ru" >
 					</div>
 				  </div>
 				</div>
 			  </div>
 			  <div>
-				<div class="description-profile__wrap row">
+				<div class="description-profile__button-wrap row">
 				<button type="submit" class="description-profile__button_add-friend">Добавить в друзья</button>
 				  <div class="description-profile-user-info">
 					<p class="description-profile__text_hobby"> Интересы </p>
-					<div class="description-profile__wrap row justify-content-start">
+					<div class="description-profile-hobby__wrap row justify-content-start">
 					  <div id="Input_val" class="description-profile-hobby col-auto">
 						<ul id="standart-int" class="List">
 						</ul>
@@ -86,91 +88,12 @@
 			<section class="profile__content profile-content_friendlist">
 			  <div class="friendlist-tab-content">
 				<div class="wrapper scrollbar-dynamic">
-				  <div class="friendlist">
-					<div class="friendlist__avatar col-2">
-					  <img class="friendlist__avatar_img" src="img/1.png" alt="friend-1">
-					</div>
-					<div class="friendlist-user col-4">
-					 
-					  <div class="friendlist__wrap row-2">
-						<div class="friendlist-user-info col-8">
-						  <a class="friendlist__link_friend_name">Лев Бронштейн</a>
-						  <p class="friendlist__text_friend_city">г. Ханты-Мансийск</p>
-						  <div class="friendlist-status"><p class="friendlist__text_status_online"> Online</p></div>
-						</div>
-					  </div>
-					</div>
-	  
-					<div class="friendlist__avatar col-2">
-					  <img class="friendlist__avatar_img" src="img/2.png" alt="friend-2">
-					</div>
-					<div class="friendlist-user col-4">
-					  <div class="friendlist__wrap row-2">
-						<div class="friendlist-user-info col-8">
-								<a class="friendlist__link_friend_name">Находка Капитал </a>
-						  <p class="friendlist__text_friend_city">г. Усть-Бельск</p>
-						</div>
-					  </div>
-					</div>
-				  </div>
-				  <div class="friendlist">
-					<div class="friendlist__avatar col-2">
-					  <img class="friendlist__avatar_img" src="img/3.png" alt="friend-3">
-					</div>
-					<div class="friendlist-user col-4">
-					  <div class="friendlist__wrap row-2">
-						<div class="friendlist-user-info col-8">
-								<a class="friendlist__link_friend_name">Яндекс Петренко </a>
-						  <p class="friendlist__text_friend_city">г. Петренко</p>
-						</div>
-					  </div>
-					</div>
-					<div class="friendlist__avatar col-2">
-					  <img class="friendlist__avatar_img" src="img/4.png" alt="friend-4">
-					</div>
-					<div class="friendlist-user col-4">
-					  <div class="friendlist__wrap row-2">
-						<div class="friendlist-user-info col-8">
-							<a class="friendlist__link_friend_name">Успех Возможностей</a>
-						  <p class="friendlist__text_friend_city">г. Радонеж</p>
-						  <div class="friendlist-status"><p class="friendlist__text_status_online"> Online</p></div>
-						</div>
-					  </div>
-					</div>
-				  </div>
-				  <div class="friendlist">
-					<div class="friendlist__avatar col-2">
-					  <img class="friendlist__avatar_img" src="img/5.png" alt="friend-5">
-					</div>
-					<div class="friendlist-user col-4">
-					  <div class="friendlist__wrap row-2">
-						<div class="friendlist-user-info col-8">
-								<a class="friendlist__link_friend_name">Инна Нашлась </a>
-						  <p class="friendlist__text_friend_city">г. Омск</p>
-						  <div class="friendlist-status"><p class="friendlist__text_status_online"> Online</p></div>
-						</div>
-					  </div>
-					</div>
-					<div class="friendlist__avatar col-2">
-					  <img class="friendlist__avatar_img" src="img/6.png" alt="friend-6">
-					</div>
-					<div class="friendlist-user col-4">
-					  <div class="friendlist__wrap row-2">
-						<div class="friendlist-user-info col-8">
-							<a class="friendlist__link_friend_name">Алла Подольская </a>
-						  <p class="friendlist__text_friend_city">г. Петропавловск-Камчатский</p>
-						  <div class="friendlist-status"><p class="friendlist__text_status_online"> Online</p></div>
-						</div>
-					  </div>
-					</div>
-				  </div>				  
-	              <div class="friendlist">
-						<div class="friendlist__avatar col-2">
+					<div class="friendlist">
+						<div class="friendlist-left__avatar col-2">
 						  <img class="friendlist__avatar_img" src="img/1.png" alt="friend-1">
 						</div>
-						<div class="friendlist-user col-4">
-						 
-						  <div class="friendlist__wrap row-2">
+						<div class="friendlist-user-left-side col-4">
+						  <div class="friendlist-left__wrap row-2">
 							<div class="friendlist-user-info col-8">
 							  <a class="friendlist__link_friend_name">Лев Бронштейн</a>
 							  <p class="friendlist__text_friend_city">г. Ханты-Мансийск</p>
@@ -179,11 +102,11 @@
 						  </div>
 						</div>
 		  
-						<div class="friendlist__avatar col-2">
+						<div class="friendlist-right__avatar col-2">
 						  <img class="friendlist__avatar_img" src="img/2.png" alt="friend-2">
 						</div>
-						<div class="friendlist-user col-4">
-						  <div class="friendlist__wrap row-2">
+						<div class="friendlist-user-right-side col-4">
+						  <div class="friendlist-right__wrap row-2">
 							<div class="friendlist-user-info col-8">
 									<a class="friendlist__link_friend_name">Находка Капитал </a>
 							  <p class="friendlist__text_friend_city">г. Усть-Бельск</p>
@@ -192,22 +115,22 @@
 						</div>
 					  </div>
 					  <div class="friendlist">
-						<div class="friendlist__avatar col-2">
+						<div class="friendlist-left__avatar col-2">
 						  <img class="friendlist__avatar_img" src="img/3.png" alt="friend-3">
 						</div>
-						<div class="friendlist-user col-4">
-						  <div class="friendlist__wrap row-2">
+						<div class="friendlist-user-left-side  col-4">
+						  <div class="friendlist-left__wrap row-2">
 							<div class="friendlist-user-info col-8">
 									<a class="friendlist__link_friend_name">Яндекс Петренко </a>
 							  <p class="friendlist__text_friend_city">г. Петренко</p>
 							</div>
 						  </div>
 						</div>
-						<div class="friendlist__avatar col-2">
+						<div class="friendlist-right__avatar col-2">
 						  <img class="friendlist__avatar_img" src="img/4.png" alt="friend-4">
 						</div>
-						<div class="friendlist-user col-4">
-						  <div class="friendlist__wrap row-2">
+						<div class="friendlist-user-right-side  col-4">
+						  <div class="friendlist-right__wrap row-2">
 							<div class="friendlist-user-info col-8">
 								<a class="friendlist__link_friend_name">Успех Возможностей</a>
 							  <p class="friendlist__text_friend_city">г. Радонеж</p>
@@ -217,11 +140,11 @@
 						</div>
 					  </div>
 					  <div class="friendlist">
-						<div class="friendlist__avatar col-2">
+						<div class="friendlist-left__avatar col-2">
 						  <img class="friendlist__avatar_img" src="img/5.png" alt="friend-5">
 						</div>
-						<div class="friendlist-user col-4">
-						  <div class="friendlist__wrap row-2">
+						<div class="friendlist-user-left-side  col-4">
+						  <div class="friendlist-left__wrap row-2">
 							<div class="friendlist-user-info col-8">
 									<a class="friendlist__link_friend_name">Инна Нашлась </a>
 							  <p class="friendlist__text_friend_city">г. Омск</p>
@@ -229,11 +152,11 @@
 							</div>
 						  </div>
 						</div>
-						<div class="friendlist__avatar col-2">
+						<div class="friendlist-right__avatar col-2">
 						  <img class="friendlist__avatar_img" src="img/6.png" alt="friend-6">
 						</div>
-						<div class="friendlist-user col-4">
-						  <div class="friendlist__wrap row-2">
+						<div class="friendlist-user-right-side col-4">
+						  <div class="friendlist-right__wrap row-2">
 							<div class="friendlist-user-info col-8">
 								<a class="friendlist__link_friend_name">Алла Подольская </a>
 							  <p class="friendlist__text_friend_city">г. Петропавловск-Камчатский</p>
@@ -241,85 +164,159 @@
 							</div>
 						  </div>
 						</div>
+					  </div>				  <div class="friendlist">
+						<div class="friendlist-left__avatar col-2">
+						  <img class="friendlist__avatar_img" src="img/1.png" alt="friend-1">
+						</div>
+						<div class="friendlist-user-left-side col-4">
+						  <div class="friendlist-left__wrap row-2">
+							<div class="friendlist-user-info col-8">
+							  <a class="friendlist__link_friend_name">Лев Бронштейн</a>
+							  <p class="friendlist__text_friend_city">г. Ханты-Мансийск</p>
+							  <div class="friendlist-status"><p class="friendlist__text_status_online"> Online</p></div>
+							</div>
+						  </div>
+						</div>
+		  
+						<div class="friendlist-right__avatar col-2">
+						  <img class="friendlist__avatar_img" src="img/2.png" alt="friend-2">
+						</div>
+						<div class="friendlist-user-right-side col-4">
+						  <div class="friendlist-right__wrap row-2">
+							<div class="friendlist-user-info col-8">
+									<a class="friendlist__link_friend_name">Находка Капитал </a>
+							  <p class="friendlist__text_friend_city">г. Усть-Бельск</p>
+							</div>
+						  </div>
+						</div>
 					  </div>
 					  <div class="friendlist">
-							<div class="friendlist__avatar col-2">
-							  <img class="friendlist__avatar_img" src="img/1.png" alt="friend-1">
-							</div>
-							<div class="friendlist-user col-4">
-							 
-							  <div class="friendlist__wrap row-2">
-								<div class="friendlist-user-info col-8">
-								  <a class="friendlist__link_friend_name">Лев Бронштейн</a>
-								  <p class="friendlist__text_friend_city">г. Ханты-Мансийск</p>
-								  <div class="friendlist-status"><p class="friendlist__text_status_online"> Online</p></div>
-								</div>
-							  </div>
-							</div>
-			  
-							<div class="friendlist__avatar col-2">
-							  <img class="friendlist__avatar_img" src="img/2.png" alt="friend-2">
-							</div>
-							<div class="friendlist-user col-4">
-							  <div class="friendlist__wrap row-2">
-								<div class="friendlist-user-info col-8">
-										<a class="friendlist__link_friend_name">Находка Капитал </a>
-								  <p class="friendlist__text_friend_city">г. Усть-Бельск</p>
-								</div>
-							  </div>
+						<div class="friendlist-left__avatar col-2">
+						  <img class="friendlist__avatar_img" src="img/3.png" alt="friend-3">
+						</div>
+						<div class="friendlist-user-left-side  col-4">
+						  <div class="friendlist-left__wrap row-2">
+							<div class="friendlist-user-info col-8">
+									<a class="friendlist__link_friend_name">Яндекс Петренко </a>
+							  <p class="friendlist__text_friend_city">г. Петренко</p>
 							</div>
 						  </div>
-						  <div class="friendlist">
-							<div class="friendlist__avatar col-2">
-							  <img class="friendlist__avatar_img" src="img/3.png" alt="friend-3">
-							</div>
-							<div class="friendlist-user col-4">
-							  <div class="friendlist__wrap row-2">
-								<div class="friendlist-user-info col-8">
-										<a class="friendlist__link_friend_name">Яндекс Петренко </a>
-								  <p class="friendlist__text_friend_city">г. Петренко</p>
-								</div>
-							  </div>
-							</div>
-							<div class="friendlist__avatar col-2">
-							  <img class="friendlist__avatar_img" src="img/4.png" alt="friend-4">
-							</div>
-							<div class="friendlist-user col-4">
-							  <div class="friendlist__wrap row-2">
-								<div class="friendlist-user-info col-8">
-									<a class="friendlist__link_friend_name">Успех Возможностей</a>
-								  <p class="friendlist__text_friend_city">г. Радонеж</p>
-								  <div class="friendlist-status"><p class="friendlist__text_status_online"> Online</p></div>
-								</div>
-							  </div>
+						</div>
+						<div class="friendlist-right__avatar col-2">
+						  <img class="friendlist__avatar_img" src="img/4.png" alt="friend-4">
+						</div>
+						<div class="friendlist-user-right-side  col-4">
+						  <div class="friendlist-right__wrap row-2">
+							<div class="friendlist-user-info col-8">
+								<a class="friendlist__link_friend_name">Успех Возможностей</a>
+							  <p class="friendlist__text_friend_city">г. Радонеж</p>
+							  <div class="friendlist-status"><p class="friendlist__text_status_online"> Online</p></div>
 							</div>
 						  </div>
-						  <div class="friendlist">
-							<div class="friendlist__avatar col-2">
-							  <img class="friendlist__avatar_img" src="img/5.png" alt="friend-5">
-							</div>
-							<div class="friendlist-user col-4">
-							  <div class="friendlist__wrap row-2">
-								<div class="friendlist-user-info col-8">
-										<a class="friendlist__link_friend_name">Инна Нашлась </a>
-								  <p class="friendlist__text_friend_city">г. Омск</p>
-								  <div class="friendlist-status"><p class="friendlist__text_status_online"> Online</p></div>
-								</div>
-							  </div>
-							</div>
-							<div class="friendlist__avatar col-2">
-							  <img class="friendlist__avatar_img" src="img/6.png" alt="friend-6">
-							</div>
-							<div class="friendlist-user col-4">
-							  <div class="friendlist__wrap row-2">
-								<div class="friendlist-user-info col-8">
-									<a class="friendlist__link_friend_name">Алла Подольская </a>
-								  <p class="friendlist__text_friend_city">г. Петропавловск-Камчатский</p>
-								  <div class="friendlist-status"><p class="friendlist__text_status_online"> Online</p></div>
-								</div>
-							  </div>
+						</div>
+					  </div>
+					  <div class="friendlist">
+						<div class="friendlist-left__avatar col-2">
+						  <img class="friendlist__avatar_img" src="img/5.png" alt="friend-5">
+						</div>
+						<div class="friendlist-user-left-side  col-4">
+						  <div class="friendlist-left__wrap row-2">
+							<div class="friendlist-user-info col-8">
+									<a class="friendlist__link_friend_name">Инна Нашлась </a>
+							  <p class="friendlist__text_friend_city">г. Омск</p>
+							  <div class="friendlist-status"><p class="friendlist__text_status_online"> Online</p></div>
 							</div>
 						  </div>
+						</div>
+						<div class="friendlist-right__avatar col-2">
+						  <img class="friendlist__avatar_img" src="img/6.png" alt="friend-6">
+						</div>
+						<div class="friendlist-user-right-side col-4">
+						  <div class="friendlist-right__wrap  row-2">
+							<div class="friendlist-user-info col-8">
+								<a class="friendlist__link_friend_name">Алла Подольская </a>
+							  <p class="friendlist__text_friend_city">г. Петропавловск-Камчатский</p>
+							  <div class="friendlist-status"><p class="friendlist__text_status_online"> Online</p></div>
+							</div>
+						  </div>
+						</div>
+					  </div>				  <div class="friendlist">
+						<div class="friendlist-left__avatar col-2">
+						  <img class="friendlist__avatar_img" src="img/1.png" alt="friend-1">
+						</div>
+						<div class="friendlist-user-left-side col-4">
+						  <div class="friendlist-left__wrap row-2">
+							<div class="friendlist-user-info col-8">
+							  <a class="friendlist__link_friend_name">Лев Бронштейн</a>
+							  <p class="friendlist__text_friend_city">г. Ханты-Мансийск</p>
+							  <div class="friendlist-status"><p class="friendlist__text_status_online"> Online</p></div>
+							</div>
+						  </div>
+						</div>
+		  
+						<div class="friendlist-right__avatar col-2">
+						  <img class="friendlist__avatar_img" src="img/2.png" alt="friend-2">
+						</div>
+						<div class="friendlist-user-right-side col-4">
+						  <div class="friendlist-right__wrap  row-2">
+							<div class="friendlist-user-info col-8">
+									<a class="friendlist__link_friend_name">Находка Капитал </a>
+							  <p class="friendlist__text_friend_city">г. Усть-Бельск</p>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="friendlist">
+						<div class="friendlist-left__avatar col-2">
+						  <img class="friendlist__avatar_img" src="img/3.png" alt="friend-3">
+						</div>
+						<div class="friendlist-user-left-side  col-4">
+						  <div class="friendlist-left__wrap row-2">
+							<div class="friendlist-user-info col-8">
+									<a class="friendlist__link_friend_name">Яндекс Петренко </a>
+							  <p class="friendlist__text_friend_city">г. Петренко</p>
+							</div>
+						  </div>
+						</div>
+						<div class="friendlist-right__avatar col-2">
+						  <img class="friendlist__avatar_img" src="img/4.png" alt="friend-4">
+						</div>
+						<div class="friendlist-user-right-side  col-4">
+						  <div class="friendlist-right__wrap  row-2">
+							<div class="friendlist-user-info col-8">
+								<a class="friendlist__link_friend_name">Успех Возможностей</a>
+							  <p class="friendlist__text_friend_city">г. Радонеж</p>
+							  <div class="friendlist-status"><p class="friendlist__text_status_online"> Online</p></div>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="friendlist">
+						<div class="friendlist-left__avatar col-2">
+						  <img class="friendlist__avatar_img" src="img/5.png" alt="friend-5">
+						</div>
+						<div class="friendlist-user-left-side  col-4">
+						  <div class="friendlist-left__wrap row-2">
+							<div class="friendlist-user-info col-8">
+									<a class="friendlist__link_friend_name">Инна Нашлась </a>
+							  <p class="friendlist__text_friend_city">г. Омск</p>
+							  <div class="friendlist-status"><p class="friendlist__text_status_online"> Online</p></div>
+							</div>
+						  </div>
+						</div>
+						<div class="friendlist-right__avatar col-2">
+						  <img class="friendlist__avatar_img" src="img/6.png" alt="friend-6">
+						</div>
+						<div class="friendlist-user-right-side col-4">
+						  <div class="friendlist-right__wrap  row-2">
+							<div class="friendlist-user-info col-8">
+								<a class="friendlist__link_friend_name">Алла Подольская </a>
+							  <p class="friendlist__text_friend_city">г. Петропавловск-Камчатский</p>
+							  <div class="friendlist-status"><p class="friendlist__text_status_online"> Online</p></div>
+							</div>
+						  </div>
+						</div>
+					  </div>				  
 				</div>
 		      <div>
 			<section>
