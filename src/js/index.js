@@ -2,8 +2,6 @@ import jQuery from "jquery";
 
 window.$ = window.jQuery = jQuery;
 
-$("input").attr("autocomplete", "off");
-
 require('./modules/prettify');
 
 require('./modules/jquery.scrollbar');
